@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NotesNow</title>
+        <link rel="stylesheet" href="./iconfont/tabler-icons.css">
+        <style>
+            :root {
+                --primary: #0388F5;
+                --primary-dark: #005EAB;
+                --primary-light: #80C6FF;
+                --secondary: #F59602;
+                --secondary-dark: #A86701;
+            }
+
+            body {
+                background-color: #2b2b2b;
+                font-family: Arial, sans-serif;
+                color: #ffffff;
+                line-height: 1.5;
+                margin: 0;
+                width: 100%;
+            }
+
+            body * {
+                box-sizing: border-box;
+            }
+
+            /** Normalize */
+            h1, h2, h3, h4, h5, h6,
+            p {
+                margin: 0;
+            }
+
+            main > section {
+                width: 100%;
+                padding-top: 2vh;
+                padding-bottom: 2vh;
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
+
+            main > section:nth-child(even) {
+                background: linear-gradient(var(--primary-dark), var(--primary));
+            }
+
+            #app-name {
+                font-size: 2.5rem;
+                color: var(--primary-light);
+            }
+
+            #hero {
+                display: flex;
+            }
+
+            #slogan {
+                font-weight: 500;
+            }
+
+            #hero img {
+                max-width: 800px;
+                object-fit: cover;
+            }
+
+            .selling-point p {
+                font-size: 1.2rem;
+            }
+
+            .download-button {
+                background: linear-gradient(var(--primary-dark), var(--primary));
+                border: 1px solid var(--primary-dark);
+                border-radius: 0.25rem;
+                color: #ffffff;
+                font-size: 1.25rem;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section id="hero">
+                <div style="text-align: left; margin-right: 2rem;">
+                    <h1 id="app-name">NotesNow</h1>
+                    <h2 id="slogan">Your note-taking multi-tool</h2>
+
+                    <p>NotesNow provides simple yet powerful tools for:</p>
+                    <ul>
+                        <li>Text</li>
+                        <li>Video</li>
+                        <li>PDF</li>
+                        <li>Drawings</li>
+                    </ul>
+
+                    <a class="download-button" href="./downloads/NotesNow-1.0.exe">
+                        <i class="ti ti-download"></i> Download
+                    </a>
+                </div>
+
+                <img src="video-note-screenshot.png" alt="The video note-taking abilities of NotesNow" />
+            </section>
+
+            <section>
+                <hgroup class="selling-point">
+                    <h2><i class="ti ti-bolt"></i> Information, at your fingertips</h2>
+                    <p>Find the note you created yesterday, or two months ago, fast</p>
+                </hgroup>
+
+                <p>Notes aren't useful if you can't find them, yet many apps force you to organize your notes in a particular fashion.</p>
+                <p>NotesNow provides many of the organizational features you're used to and then some:</p>
+                <ul>
+                    <li>Sections and subpages</li>
+                    <li>Tags</li>
+                    <li>Links between notes</li>
+                    <li>Table of contents for text notes</li>
+                </ul>
+
+            </section>
+
+            <section>
+                <hgroup class="selling-point">
+                    <h2><i class="ti ti-lock"></i> Own Your Notes</h2>
+                    <p>Back it up on the cloud or keep it local</p>
+                </hgroup>
+            </section>
+
+            <section>
+                <hgroup class="selling-point">
+                    <h2>First class PDF experience</h2>
+                    <p>Test</p>
+                </hgroup>
+            </section>
+        </main>z
+    </body>
+</html>
