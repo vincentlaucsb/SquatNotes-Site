@@ -1,0 +1,12 @@
+{
+    "name": "squatnotes-site",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "css": "mklink /D \".\\static\\css\" \"..\\node_modules\\squatnotes-style\\css",
+        "logo": "mklink /D \".\\static\\logo\" \"..\\node_modules\\squatnotes-style\\logo"
+    },
+    "devDependencies": {                                                                                                                                                                                                                                                                                                                        
+        "squatnotes-style": "file:..//SquatNotes-Style"
+    }
+}

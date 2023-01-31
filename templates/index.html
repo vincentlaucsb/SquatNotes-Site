@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SquatNotes</title>
+        <link rel="stylesheet" href="./css/main.css" type="text/css">
+        <link rel="stylesheet" href="./iconfont/tabler-icons.css" type="text/css">
+    </head>
+    <body>
+        <main>
+            {% block content %}
+                {{section.content | safe}}
+            {% endblock %}
+        </main>
+    </body>
+</html>

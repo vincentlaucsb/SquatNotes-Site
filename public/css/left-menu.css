@@ -1,0 +1,28 @@
+#menu-left .btn-lg.active, #menu-left .btn-lg:hover {
+  color: var(--white);
+}
+
+#menu li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+#menu li.active > a {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+#menu li.dropping > a {
+  background-color: var(--secondary);
+}
+
+#menu, #menu * {
+  list-style-type: none;
+  padding: 0;
+}
+
+#menu .submenu a {
+  padding-left: var(--spacing-4) !important;
+}
+
+/*# sourceMappingURL=left-menu.css.map */
