@@ -1,0 +1,24 @@
+{% if image_left %}
+    {% set body_wrapper_class="flex-grow ml-4" %}
+{% else %}
+    {% set body_wrapper_class="flex-grow" %}
+{% endif %}
+
+<section class="flex align-items-center my-6">
+    <div class="{{ body_wrapper_class }}"
+    {% if image_left %}
+        style="order: 1;"
+    {% endif %}
+        >
+        <h2>{{title}}</h2>
+        {{ body | markdown(inline=true) | safe }}
+    </div>
+    <span
+        {% if image_left %}
+            style="order: 0"
+        {% endif %}
+    >
+        {% set final_image = resize_image(path=image, width=800, op="fit_width") %}
+        <img src="{{final_image.url}}" />
+    </span>
+</section>
