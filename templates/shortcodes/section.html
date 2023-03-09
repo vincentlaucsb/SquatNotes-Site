@@ -4,6 +4,12 @@
     {% set body_wrapper_class="flex-grow" %}
 {% endif %}
 
+{% if height %}
+    {% set image_op="fit_height" %}
+{% else %}
+    {% set image_op="fit_width" %}
+{% endif %}
+
 <section class="flex align-items-center my-6">
     <div class="{{ body_wrapper_class }}"
     {% if image_left %}
@@ -18,7 +24,9 @@
             style="order: 0"
         {% endif %}
     >
-        {% set final_image = resize_image(path=image, width=800, op="fit_width") %}
-        <img src="{{final_image.url}}" />
+        {% set final_image = resize_image(path=image, width=800, height=500, op=image_op) %}
+        <a href="/{{image}}" target="_blank">
+            <img src="{{final_image.url}}" />
+        </a>
     </span>
 </section>

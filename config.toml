@@ -14,3 +14,8 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+
+[extra.urls]
+java = "https://www.oracle.com/java/technologies/downloads"
+msi = "https://squatnotes-cdn.sfo3.cdn.digitaloceanspaces.com/SquatNotes%20Demo-22.2.0.msi"
+zip = "https://squatnotes-cdn.sfo3.cdn.digitaloceanspaces.com/SquatNotes%20Demo-22.2.0.zip"

@@ -2,12 +2,12 @@
 +++
 
 <section id="hero" class="mb-4">
-    <h1 class="text-center" id="slogan">Your note-taking multi-tool</h1>
-    <h2 class="text-center">
+    <h1 class="text-center fw-500" id="slogan">Your note-taking multi-tool</h1>
+    <h2 class="text-center fw-500">
         Take both text and video notes in a local-first, cloud-optional digital notebook
     </h2>
-    <div class="flex flex-col align-items-center w-100">
-        <a class="btn btn-lg btn-primary" href="https://squatnotes-cdn.sfo3.cdn.digitaloceanspaces.com/SquatNotes%20Demo-22.2.0.msi">
+    <div class="flex justify-center mt-3 w-100">
+        <a class="btn btn-lg btn-primary" href="{{ msi_url() }}">
             <div class="flex align-items-center">
                 <i class="text-xxl ti ti-brand-windows"></i>
                 <div class="ml-2">
@@ -16,15 +16,18 @@
                 </div>
             </div>
         </a>
-        <a class="btn btn-lg btn-secondary mt-1" href="https://squatnotes-cdn.sfo3.cdn.digitaloceanspaces.com/SquatNotes%20Demo-22.2.0.zip">
-                    <div class="flex align-items-center">
-            <i class="text-xxl ti ti-file-zip"></i>
-            <div class="ml-2">
-                <div>Download cross-platform bundle</div>
-                <div class="text-sm">Requires Java SE 8 or later</div>
-            </div>
+        <a class="btn btn-lg btn-secondary ml-2" href="{{ zip_url() }}">
+            <div class="flex align-items-center">
+                <i class="text-xxl ti ti-file-zip"></i>
+                <div class="ml-2">
+                    <div>Download cross-platform bundle</div>
+                    <div class="text-sm">Requires Java SE 19</div>
+                </div>
             </div>
         </a>
+    </div>
+    <div class="text-center text-sm mt-2">
+        <a href="{{ java_url() }}">Java 19 is free software, and can be downloaded from Oracle's website. </a>
     </div>
 </section>
 
