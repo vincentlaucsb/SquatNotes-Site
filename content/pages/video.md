@@ -32,10 +32,10 @@ Furthermore, you can configure individual notebooks to automatically export to y
 {% end %}
 
 {% section(
-  title="The World At Your Doorstep"
+  title="The World At Your Doorstep",
   image="Video Download.png",
   image_left=true
-)%}
+) %}
 SquatNotes works on MP4 and WEBM files stored on your local filesystem, so you won't waste downloading a video over and over again. MP4 and WEBM formats represent the majority of videos either downloaded from the web, or 
 taken with a camera, so SquatNotes will be sure to work with your videos.
 
@@ -43,7 +43,15 @@ Furthermore, SquatNotes integrates with the YouTube downloader [yt-dlp](https://
 {% end %}
 
 
-## Live Screen Capture
-The pro version also comes with a screen capture feature that allows you to capture video from any open tab or app as you are playing it.
+{% section(
+  title="Live Screen Capture",
+  image="Screen Capture Screenshot.png"
+) %}
 
-<img src="..\Screen Capture Screenshot.png" alt="Live Screen Capture" />
+The pro version also comes with a screen capture feature that allows you to capture video from any open tab or app.
+
+* Capture video and audio from any open tab or app (microphone input not yet supported)
+  * Saves videeos in WEBM format
+* Supported by the latest versions of popular browsers (Chrome, Brave, Edge, etc.)
+
+{% end %}
