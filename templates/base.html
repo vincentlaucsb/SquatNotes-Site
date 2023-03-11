@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="icon" type="image/png" href="/logo/Icon Logo.png">
-    <link href="/css/main.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="/icons/tabler-icons.css" type="text/css">
+    <link rel="icon" type="image/png" href="{{config.base_url}}/logo/Icon Logo.png">
+    <link href="{{config.base_url}}/css/main.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{config.base_url}}/icons/tabler-icons.css" type="text/css">
     <style>
         :root {
             --background: var(--gray-15);
@@ -51,14 +51,16 @@
 </head>
 <body>
     <header class="flex ">
-        <a href="/" style="line-height: 0;">
-            <img src="/logo/Full Logo.png" height="50" alt="SquatNotes Logo" />
+        <a href="{{config.base_url}}/" style="line-height: 0;">
+            <img src="{{config.base_url}}/logo/Full Logo.png" height="50" alt="SquatNotes Logo" />
         </a>
     
         <nav class="ml-4" style="align-self: center;">
-            <a class="p-2" href="/">Overview</a>
-            <a class="p-2" href="/pages/video">Video</a>
-            <a class="p-2" href="/pages/pro"><strong>Get SquatNotes Pro</strong></a>
+            <a class="p-2" href="{{config.base_url}}/">Overview</a>
+            <a class="p-2" href="{{config.base_url}}/pages/video">Video</a>
+            <a class="p-2" href="{{config.base_url}}/pages/pro"><strong>Get SquatNotes Pro</strong></a>
+            <a class="p-2" href="{{config.base_url}}/pages/about">About</a>
+            <a class="p-2" href="{{config.base_url}}/pages/support">Support</a>
         </nav>
     </header>
 
@@ -68,7 +70,7 @@
     </main>
 
     <footer class="text-center">
-        <a href="/pages/privacy">Privacy</a>
+        <a href="{{config.base_url}}/pages/privacy">Privacy</a>
         <span class="ml-4">&copy; 2023 <a href="https://www.vincela.com">Vincent La</a></span>
     </footer>
 </body>
